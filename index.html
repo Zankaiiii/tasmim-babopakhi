@@ -3,138 +3,169 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tasmim</title>
-<link href="https://fonts.googleapis.com/css2?family=Helvetica&family=Druzuh&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<title>Cards Demo</title>
+
+<style>
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+background: linear-gradient(to bottom, #ffcfe9, #ffd1a1);
+    position: relative;
+}
+
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+}
+
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 16px;
+}
+
+
+.cards {
+    background-color: #5a3f37;
+    padding: 18px;
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;         
+    transform: translateY(40px);
+    transition: 0.7s ease; 
+}
+
+.cards.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cards img {
+    width: 100%;
+    border-radius: 10px;
+}
+.cards:nth-child(1) { background-color: #6b4f3f; }
+.cards:nth-child(2) { background-color: #755845; }
+.cards:nth-child(3) { background-color: #80604b; }
+.cards:nth-child(4) { background-color: #8b6952; }
+.cards:nth-child(5) { background-color: #977258; }
+.cards:nth-child(6) { background-color: #a27b5f; }
+.cards:nth-child(7) { background-color: #ae8466; }
+.cards:nth-child(8) { background-color: #ba8d6d; }
+.cards:nth-child(9) { background-color: #c69674; }
+
+.big-card {
+    height: 100vh;
+    background-color: #d2a17c;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.big-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+</style>
 </head>
+
 <body>
 
-<!-- Top paragraph -->
-<div class="intro-text">
-  Please don’t push me away anymore… please just embrace me now.
+<h1 class="header">This is a test</h1>
+
+<div class="cards-container">
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
+    <div class="cards">
+      <img src="pic_trulli.jpg">
+      <h1>What is Lorem Ipsum</h1>
+      <p>Lorem Ipsum is simply dummy text.</p>
+    </div>
+
 </div>
 
-<!-- 10 Reasons Section -->
-<section id="reasons">
-  <h2>10 Reasons Why You Should Date Me</h2>
-  <div class="reason-grid">
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=1" alt="Photo 1">
-      <p>We can pet cats together and exist in chaos.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=2" alt="Photo 2">
-      <p>We can be completely ourselves without filters.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=3" alt="Photo 3">
-      <p>We laugh at the dumbest stuff and survive.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=4" alt="Photo 4">
-      <p>We grind and grow together, chaos included.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=5" alt="Photo 5">
-      <p>We share snacks and steal fries without guilt.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=6" alt="Photo 6">
-      <p>Life is messy but we make it beautiful together.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=7" alt="Photo 7">
-      <p>We dance like idiots and laugh even louder.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=8" alt="Photo 8">
-      <p>We can nap together and be lazy champs.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=9" alt="Photo 9">
-      <p>We support each other through brainrot moments.</p>
-    </div>
-    <div class="reason-card">
-      <img src="https://picsum.photos/300/200?random=10" alt="Photo 10">
-      <p>Life’s complicated, but with you I see light in everything.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Timeline Section -->
-<section id="timeline">
-  <h2>Timeline</h2>
-  <div class="timeline-line"></div>
-  <div class="timeline-events">
-    <div class="timeline-event">
-      <h3>Sep 5, 2024 – First spark</h3>
-      <p>Started catching feelings, brain overthinking, not sure why.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Sep 20, 2024 – Realizing comfort</h3>
-      <p>I realized I could be touchy and feel comfy with you.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Nov 23, 2024 – First hug</h3>
-      <p>Hug made me feel cozy and alive for a moment.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Nov 26, 2024 – First kiss</h3>
-      <p>Brain short-circuited, heart panicked, survived, good.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Dec 5, 2024 – Late-night dumb stuff</h3>
-      <p>Laughed endlessly at memes, random jokes, pure nonsense.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Dec 20, 2024 – Tiny fight</h3>
-      <p>Had a small argument, survived like champs.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Aug 1, 2025 – Breakup chaos</h3>
-      <p>Broke up, panicked, realized I needed to fix my chaotic brain.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Aug-Dec 2025 – Brain rehab</h3>
-      <p>Worked on myself, learned patience, became slightly better me.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Dec 2025 – Trying to be decent</h3>
-      <p>Reached out, apologized, proving I can exist without full meltdown.</p>
-    </div>
-    <div class="timeline-event">
-      <h3>Soft-hearted reflection</h3>
-      <p>Life’s messy, but with you, I see light in everything.</p>
-    </div>
-  </div>
-</section>
-
-<!-- 10 Playful Hates Section -->
-<section id="hates">
-  <h2>10 Things You Might Hate About Me</h2>
-  <div class="hates-grid">
-    <div class="hate-card">I overthink everything.</div>
-    <div class="hate-card">I steal your fries.</div>
-    <div class="hate-card">I sing badly in the shower.</div>
-    <div class="hate-card">I panic randomly.</div>
-    <div class="hate-card">I forget to reply sometimes.</div>
-    <div class="hate-card">I overanalyze movies.</div>
-    <div class="hate-card">I’m messy sometimes.</div>
-    <div class="hate-card">I laugh at my own jokes too much.</div>
-    <div class="hate-card">I snack too much.</div>
-    <div class="hate-card">I’m a little clingy.</div>
-  </div>
-</section>
-
-<!-- Floating Glass Hearts -->
-<div class="floating-glass-icons">
-  <div class="glass-heart"></div>
-  <div class="glass-heart"></div>
-  <div class="glass-heart"></div>
-  <div class="glass-heart"></div>
-  <div class="glass-heart"></div>
+<div class="big-card">
+    <img src="pic_trulli.jpg">
+    <h1>Fullscreen Final Card</h1>
+    <p>This card fills the entire screen.</p>
 </div>
 
-<script src="script.js"></script>
+<script>
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.cards').forEach(card=>{
+    observer.observe(card);
+});
+</script>
+
 </body>
 </html>
