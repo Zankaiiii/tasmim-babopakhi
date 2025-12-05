@@ -11,9 +11,19 @@ body {
     padding: 0;
     font-family: sans-serif;
     min-height: 100vh;
-    background: linear-gradient(to bottom, #ffcfe9, #ffd1a1);
     position: relative;
+
+    background-image: 
+        url("https://raw.githubusercontent.com/Zankaiiii/tasmim-babopakhi/refs/heads/main/assets/download.png"),
+        linear-gradient(to bottom, #ffcfe9, #ffd1a1);
+
+    /* make both cover the screen */
+    background-size: cover, cover;
+    background-position: center, top;
+    background-repeat: no-repeat, no-repeat;
+    background-blend-mode: screen, normal;
 }
+
 
 body::before {
     content: "";
@@ -28,6 +38,7 @@ body::before {
     opacity: 0.18;
     z-index: 2;
 }
+
 
 .header {
     text-align: center;
@@ -92,104 +103,143 @@ body::before {
     width: 100%;
     border-radius: 12px;
 }
+
+#play-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #5a3f37, #8b6952);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#play-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+#play-btn:active {
+    transform: translateY(0);
+}
+
+#play-btn.playing {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(139, 105, 82, 0.6);
+    }
+}
 </style>
 </head>
 
 <body>
-
 <audio id="bg-music" 
-    src="https://github.com/Zankaiiii/tasmim-babopakhi/raw/refs/heads/main/assets/music.mp3.mp3"
-    autoplay
-    muted
-    loop
-    preload="auto"
-    style="display:none;">
+       src="https://github.com/Zankaiiii/tasmim-babopakhi/raw/refs/heads/main/assets/music.mp3.mp3"
+       loop
+       preload="auto"
+       style="display:none;">
 </audio>
 
-<h1 class="header">This is a test</h1>
+<button id="play-btn">🔊 Play Music</button>
+
+<h2 class="header">Why you should date me (updated and improved)</h2>
 
 <div class="cards-container">
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/1.png">
+      <h1>1</h1>
+      <p>I am cool and very understanding.</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/2.png">
+      <h1>2</h1>
+      <p>I can help you code and learn things about computer science while having fun. Also can be used as a punching bag. As you can see I'm very useful to you now.</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/3.png">
+      <h1>3</h1>
+      <p>I can cook and clean for you honey. I also learned baking for you we can bake and make vlogs.</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/4.png">
+      <h1>4</h1>
+      <p>I match your freak and autism. We will look very cute together and will mog other couples.</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/5.jpg">
+      <h1>5</h1>
+      <p>I am very nice looking(sometimes) and smart. I also don't make grammatical errors</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/6.jpg">
+      <h1>6</h1>
+      <p>I am a good boy for you. I know you are always right so I won't argue with you easily. My new update also allows me to be faster than before.</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/7.png">
+      <h1>7</h1>
+      <p>I mind my tone for you. I won't talk like a bitch with you if something else ruined my mood.</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/8.png">
+      <h1>8</h1>
+      <p>I am not a bitch(like last year). I will be very gentle for you love.</p>
     </div>
 
     <div class="cards">
-      <img src="pic_trulli.jpg">
-      <h1>What is Lorem Ipsum</h1>
-      <p>Lorem Ipsum is simply dummy text.</p>
+      <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/9.jpg">
+      <h1>9</h1>
+      <p> stay away from girls. I will always have my time the most, others aren't even a shadow without substance. You alone will be my top priority(you already are in case you don't know)</p>
     </div>
 
 </div>
 
 <div class="big-card">
-    <img src="pic_trulli.jpg">
-    <h1>Fullscreen Final Card</h1>
-    <p>This card fills the entire screen.</p>
+    <img src="https://raw.githubusercontent.com/zankaiiii/tasmim-babopakhi/main/assets/10.jpg">
+    <h1>10</h1>
+    <p>Tasmim, I want you because loving you felt like choosing what’s real in my life. When I messed up, I didn’t run from it, I faced it and fixed my wrongs because you deserve the best version of me. I stood up for myself so that I can stand beside you. With you, I can be my realest self without hesitation, showing you every part of me openly and honestly. It took me time, but I’ve finally learned to accept your wrongs too, and I love you even more because you fixed them, even the ones that were hard for me to digest. Just like I worked on myself, you worked on yourself too, and that makes us stronger. I understand that we both have our own personal lives and responsibilities, but that doesn’t change how I feel. I’ll hang tight with you through every challenge and every moment of uncertainty, because one day I want us to have our personal life together.And most importantly, I love you Tasmim</p>
 </div>
 
 <script>
-const bg = document.getElementById("bg-music");
-let started = false;
-
-function startMusic() {
-    if (started) return;
-    started = true;
-    bg.muted = false;
-    bg.play()
-      .then(() => console.log("Music started"))
-      .catch(err => {
-        console.log("Playback blocked:", err);
-        started = false;
-      });
-}
-
-["wheel", "scroll", "touchstart", "pointerdown", "keydown"].forEach(evt => {
-    window.addEventListener(evt, startMusic, { once: true });
+document.getElementById('play-btn').addEventListener('click', function() {
+    const bg = document.getElementById('bg-music');
+    bg.play().then(() => {
+        this.textContent = '🎵 Music Playing';
+        this.classList.add('playing');
+        setTimeout(() => {
+            this.style.opacity = '0';
+            setTimeout(() => {
+                this.style.display = 'none';
+            }, 300);
+        }, 2000);
+    }).catch(err => {
+        console.log("Playback failed:", err);
+        this.textContent = '❌ Playback Failed';
+    });
 });
 
 const observer = new IntersectionObserver((entries) => {
